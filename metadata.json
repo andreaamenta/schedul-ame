@@ -1,0 +1,5 @@
+{
+  "name": "Process Scheduling Solver",
+  "description": "A real-time collaborative process scheduling simulator and solver supporting various algorithms like FCFS, SJF, SRTF, RR, and Priority.",
+  "requestFramePermissions": []
+}

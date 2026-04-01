@@ -1,0 +1,66 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { AlgorithmType } from './types';
+
+export const ALGORITHMS: { type: AlgorithmType; name: string; description: string }[] = [
+  { type: 'FCFS', name: 'Primo Arrivato, Primo Servito (FCFS)', description: 'I processi vengono eseguiti nell\'ordine in cui arrivano.' },
+  { type: 'SJF', name: 'Lavoro Più Corto Prima (SJF)', description: 'Il processo con il tempo di burst più breve viene eseguito per primo (non preemptive).' },
+  { type: 'SRTF', name: 'Tempo Rimanente Più Corto Prima (SRTF)', description: 'Versione preemptive di SJF. Il processo con il tempo rimanente più breve viene eseguito.' },
+  { type: 'RR', name: 'Round Robin (RR)', description: 'A ogni processo viene assegnata una piccola unità di tempo della CPU (quantum).' },
+  { type: 'Priority', name: 'Scheduling a Priorità', description: 'I processi vengono eseguiti in base alla priorità (non preemptive).' },
+  { type: 'PriorityPreemptive', name: 'Priorità Preemptive', description: 'I processi vengono eseguiti in base alla priorità e possono essere interrotti.' },
+];
+
+export const UI_STRINGS = {
+  APP_TITLE: 'Scheduling Solver',
+  SUBTITLE: 'Simulatore in Tempo Reale',
+  VIEWER_BADGE: 'Visualizzatore',
+  SESSION_LABEL: 'Sessione',
+  SHARE_VIEW: 'Condividi Vista',
+  SHARE_SESSION: 'Condividi Sessione',
+  EXIT_VIEWER: 'Esci dalla Modalità Visualizzatore',
+  RESET_ALL: 'Resetta Tutto',
+  COPIED_TOAST: 'Link copiato negli appunti!',
+  ALGO_CONFIG: 'Configurazione Algoritmo',
+  SELECT_ALGO: 'Seleziona Algoritmo',
+  TIME_QUANTUM: 'Quantum di Tempo',
+  PROCESSES: 'Processi',
+  ADD_PROCESS: 'Aggiungi Processo',
+  NAME: 'Nome',
+  ARRIVAL: 'Arrivo',
+  BURST: 'Burst',
+  PRIORITY: 'Priorità',
+  COLOR: 'Colore',
+  SOLVE: 'Risolvi Scheduling',
+  SIMULATING: 'Simulazione in corso...',
+  LIVE_EXECUTION: 'Esecuzione Live',
+  TIME: 'Tempo',
+  RUNNING: 'In Esecuzione',
+  READY_QUEUE: 'Coda Pronti',
+  COMPLETED: 'Completato',
+  IDLE: 'IDLE',
+  EMPTY: 'Vuota',
+  NONE: 'Nessuno',
+  GANTT_CHART: 'Grafico di Gantt',
+  TIMELINE: 'Timeline',
+  START: 'Inizio',
+  END: 'Fine',
+  PERFORMANCE_METRICS: 'Metriche di Performance',
+  AVG_TURNAROUND: 'Avg Turnaround',
+  AVG_WAITING: 'Avg Waiting',
+  DETAILED_RESULTS: 'Risultati Dettagliati',
+  PROCESS: 'Processo',
+  FINISH: 'Fine',
+  TURNAROUND: 'Turnaround',
+  WAITING: 'Attesa',
+  HISTORY: 'Cronologia',
+  NO_HISTORY: 'Nessuna cronologia ancora',
+  READY_FOR_SIM: 'Pronto per la simulazione',
+  VIEWING_SHARED: 'Visualizzazione risultati condivisi...',
+  FOOTER_TEXT: 'Process Scheduling Solver © 2026',
+  AVG_TAT_SHORT: 'Media TAT',
+  AVG_WT_SHORT: 'Media TA',
+};
